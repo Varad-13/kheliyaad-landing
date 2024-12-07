@@ -64,18 +64,16 @@
             object-fit: cover; 
             z-index: -1;
         }
+
+        .nav {
+            z-index: 100;
+        }
     </style>
 </head>
 
 <body class="dark:bg-gray-950 bg-gray-50 font-sans-noto dark:text-white">
-    <video class="myVideo hidden dark:block opacity-75 md:opacity-25" autoplay muted loop>
-        <source src="https://res.cloudinary.com/dej3owk7z/video/upload/v1733588621/Animated_Liquid_Gradient_Background_4_ukczbs.mp4" type="video/mp4">
-    </video>
-    <video class="myVideo dark:hidden opacity-75 md:opacity-25" autoplay muted loop>
-        <source src="https://res.cloudinary.com/dej3owk7z/video/upload/v1733591083/Animated_Liquid_Gradient_Background_4-negate_njvnp2.mp4" type="video/mp4">
-    </video>
     <div class="flex flex-col min-h-screen h-full items-center justify-center gap-8 md:gap-24 justify-self-center max-w-7xl px-4 back" >
-        <nav class="flex self-center justify-self-center justify-between backdrop-blur-sm dark:backdrop-blur-md text-white w-full xs:max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-4xl md:rounded-full fixed bg-transparent border-gray-500 md:border-2 top-0 md:top-2 md:p-0 md:px-4 p-4">
+        <nav class="nav flex self-center justify-self-center justify-between backdrop-blur-md text-white w-full xs:max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-4xl md:rounded-full fixed bg-transparent border-gray-500 md:border-2 top-0 md:top-2 md:p-0 md:px-4 p-4">
             <div class="nav-item flex px-4 md:px-6 self-start invert dark:invert-0">
                 <img class="w-36 h-auto object-cover lg:w-48" src="https://res.cloudinary.com/dej3owk7z/image/upload/v1733460651/m1gx89g18zcmtw3pzfve.png">
             </div>
@@ -97,6 +95,12 @@
         </div>
 
         
+<video class="myVideo hidden dark:block opacity-75 md:opacity-25" autoplay muted loop>
+    <source src="https://res.cloudinary.com/dej3owk7z/video/upload/v1733588621/Animated_Liquid_Gradient_Background_4_ukczbs.mp4" type="video/mp4">
+</video>
+<video class="myVideo dark:hidden opacity-75 md:opacity-25" autoplay muted loop>
+    <source src="https://res.cloudinary.com/dej3owk7z/video/upload/v1733591083/Animated_Liquid_Gradient_Background_4-negate_njvnp2.mp4" type="video/mp4">
+</video>
 <div id="hero" class="flex md:flex-row flex-col-reverse w-full h-full justify-between gap-6 p-2" style="background-image: url();">
     <div class="flex flex-col md:w-2/5 gap-4 h-auto text-gray-600 dark:text-gray-300">
         <div class="text-2xl md:text-4xl xl:text-5xl  text-gray-700 dark:text-gray-200"><span class="text-blue-600 dark:text-blue-400 font-serif-noto font-bold md:text-5xl">Kheliyaad</span> is an Institution which preserves the status of people in society by developing Mental, Physical as well as Social spirit and take them in the direction of good health.</div>
