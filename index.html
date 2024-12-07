@@ -20,13 +20,6 @@
         .rounded-4xl {
             border-radius: 2vw;
         }
-        .blog {
-            aspect-ratio: 2/1;
-        }
-
-        .video{
-            aspect-ratio: 4/3;
-        }
         /* width */
         ::-webkit-scrollbar {
                width: 5px; 
@@ -82,18 +75,18 @@
         <source src="https://res.cloudinary.com/dej3owk7z/video/upload/v1733591083/Animated_Liquid_Gradient_Background_4-negate_njvnp2.mp4" type="video/mp4">
     </video>
     <div class="flex flex-col min-h-screen h-full items-center justify-center gap-8 md:gap-24 justify-self-center max-w-7xl px-4 back" >
-        <nav class="flex self-center justify-self-center justify-between backdrop-blur-md text-white w-full xs:max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-4xl md:rounded-full fixed bg-blue-600/70 dark:bg-transparent border-gray-500 dark:md:border-2 top-0 md:top-2 md:p-0 md:px-4 p-4">
-            <div class="nav-item flex px-4 md:px-6 self-start">
+        <nav class="flex self-center justify-self-center justify-between backdrop-blur-sm dark:backdrop-blur-md text-white w-full xs:max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-4xl md:rounded-full fixed bg-transparent border-gray-500 md:border-2 top-0 md:top-2 md:p-0 md:px-4 p-4">
+            <div class="nav-item flex px-4 md:px-6 self-start invert dark:invert-0">
                 <img class="w-36 h-auto object-cover lg:w-48" src="https://res.cloudinary.com/dej3owk7z/image/upload/v1733460651/m1gx89g18zcmtw3pzfve.png">
             </div>
-            <div class="nav-item md:flex px-6 text-center items-center gap-6 font-medium lg:text-xl hidden">
+            <div class="nav-item md:flex px-6 text-center items-center gap-6 font-medium lg:text-xl hidden text-black dark:text-white">
                 <a href="/" class="hover:underline">Home</a>
                 <a href="#" class="hover:underline">Blog</a>
                 <a href="#" class="hover:underline">Gallery</a>
                 <a href="#" class="hover:underline">About Us</a>
                 <a href="/login/" class="hover:underline">Login</a>
             </div>
-            <div class="nav-item flex px-6 text-center items-center gap-6 font-medium lg:text-xl md:hidden">
+            <div class="nav-item flex px-6 text-center items-center gap-6 font-medium lg:text-xl md:hidden text-black dark:text-white">
                 <span class="material-symbols-outlined">
                     menu
                 </span>
