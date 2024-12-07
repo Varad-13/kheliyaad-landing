@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="dark">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Project</title>
+
+    <!-- Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <style>
+        .rounded-6xl {
+            border-radius: 4vw;
+        }
+        .rounded-4xl {
+            border-radius: 2vw;
+        }
+        .blog {
+            aspect-ratio: 2/1;
+        }
+
+        .video{
+            aspect-ratio: 4/3;
+        }
+        /* width */
+        ::-webkit-scrollbar {
+               width: 5px; 
+               height: 5px;
+            }
+            
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 2px;
+        }
+        .font-sans-noto{
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        .font-serif-noto {
+            font-family: "Noto Serif", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: 20%;
+        }
+    </style>
+</head>
+
+<body class="dark:bg-gray-950 bg-gray-50 font-sans-noto dark:text-white">
+    <video class="z-0 min-h-screen w-screen" autoplay muted loop id="myVideo">
+        <source src="https://res.cloudinary.com/dej3owk7z/video/upload/v1733588621/Animated_Liquid_Gradient_Background_4_ukczbs.mp4" type="video/mp4">
+    </video>
+    <div class="flex flex-col min-h-screen h-full items-center justify-center gap-8 md:gap-24 justify-self-center max-w-7xl px-4 back" >
+        <nav class="flex self-center justify-self-center justify-between backdrop-blur-sm text-white w-full xs:max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-4xl md:rounded-full fixed bg-blue-600/70 dark:bg-transparent top-0 md:top-2 md:p-0 md:px-4 p-4">
+            <div class="nav-item flex px-4 md:px-6 self-start">
+                <img class="w-36 h-auto object-cover lg:w-48" src="https://res.cloudinary.com/dej3owk7z/image/upload/v1733460651/m1gx89g18zcmtw3pzfve.png">
+            </div>
+            <div class="nav-item md:flex px-6 text-center items-center gap-6 font-medium lg:text-xl hidden">
+                <a href="/" class="hover:underline">Home</a>
+                <a href="#" class="hover:underline">Blog</a>
+                <a href="#" class="hover:underline">Gallery</a>
+                <a href="#" class="hover:underline">About Us</a>
+                <a href="/login/" class="hover:underline">Login</a>
+            </div>
+            <div class="nav-item flex px-6 text-center items-center gap-6 font-medium lg:text-xl md:hidden">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+        </nav>
+        <div class="h-16 md:h-8">
+
+        </div>
+
+        
+<div id="hero" class="flex md:flex-row flex-col-reverse w-full h-full justify-between gap-6 p-2" style="background-image: url();">
+    <div class="flex flex-col md:w-2/5 gap-4 h-auto text-gray-600 dark:text-gray-300">
+        <div class="text-2xl md:text-4xl xl:text-5xl  text-gray-700 dark:text-gray-200"><span class="text-blue-600 dark:text-blue-400 font-serif-noto font-bold md:text-6xl">Kheliyaad</span> is an Institution which preserves the status of people in society by developing Mental, Physical as well as Social spirit and take them in the direction of good health.</div>
+        <div class="hidden w-full items-center justify-center gap-4 lg:flex text-xl mt-2 2xl:px-8">
+            <a href="#" class="flex items-center justify-center button w-full rounded-full px-4 py-2 bg-blue-600 text-white text-center border border-2 border-blue-600 transition duration-700 ease-in-out hover:bg-blue-700 hover:border-blue-700 hover:font-medium">Join Us</a>
+            <a href="#" class="flex items-center justify-center button w-full rounded-full px-4 py-2 text-center border border-2 border-blue-400 text-blue-400 transition duration-300 ease-in-out hover:bg-blue-600 hover:border-blue-600 hover:text-white">Learn More</a>
+        </div>
+    </div> 
+    <div class="flex flex-col md:w-3/5 items-center justify-start gap-2">
+    <div class="flex gap-1 w-full h-full min-h-64 h-3/5">
+        <style>
+            .c1, .c2, .c3 {
+                transition: width 1s ease, border-radius 1s ease; /* Smooth transition */
+                height: 100%;
+            }
+        </style>
+        <div id="c1" class="flex bg-blue-500 c1 shadow-xl h-full min-h-64" style="width: 70%; border-radius: 4vw; background-image: url(https://kheliyaad.com/wp-content/uploads/2024/08/1-2-1.jpg); background-position: center; background-size: cover;"></div>
+        <div id="c2" class="flex bg-blue-600 c2 shadow-xl h-full min-h-64" style="width: 20%; border-radius: 2vw; background-image: url(https://kheliyaad.com/wp-content/uploads/2019/12/maxresdefault-1-1.jpg); background-position: center; background-size: cover;" ></div>
+        <div id="c3" class="flex bg-blue-700 c3 shadow-xl h-full min-h-64" style="width: 10%; border-radius: 4vw; background-image: url(https://kheliyaad.com/wp-content/uploads/2019/12/img_0030-1.jpg); background-position: center; background-size: cover;"></div>
+        <script>
+            const sections = {
+                c1: { width: "70%", radius: "4vw" },
+                c2: { width: "20%", radius: "2vw" },
+                c3: { width: "10%", radius: "4vw" },
+            };
+
+            const elements = {
+                c1: document.getElementById("c1"),
+                c2: document.getElementById("c2"),
+                c3: document.getElementById("c3"),
+            };
+    
+            // Event listener for clicks
+            Object.keys(elements).forEach((id) => {
+                // Define the handler function
+                const handler = () => {
+                    if (id === "c1") {
+                        updateWidths("c1", "c2", "c3");
+                    } else if (id === "c2") {
+                        updateWidths("c2", "c3", "c1");
+                    } else {
+                        updateWidths("c3", "c2", "c1");
+                    }
+                };
+        
+                // Attach the event listeners for hover and tap
+                elements[id].addEventListener("mouseover", handler);
+                elements[id].addEventListener("touchstart", handler);
+            });
+    
+    
+            function updateWidths(selected, second, third) {
+                elements[selected].style.width = sections.c1.width;
+                elements[selected].style.borderRadius = sections.c1.radius;
+                elements[selected].style.aspectRatio = sections.c1.aspect;
+    
+                elements[second].style.width = sections.c2.width;
+                elements[second].style.borderRadius = sections.c2.radius;
+    
+                elements[third].style.width = sections.c3.width;
+                elements[third].style.borderRadius = sections.c3.radius;
+            }
+        </script>
+    </div>
+
+    <div class="self-end lg:hidden w-full h-2/5 items-center justify-center flex gap-4 md:px-8">
+        <a href="#" class="flex items-center justify-center button w-full rounded-full px-4 py-2 bg-blue-600 text-white text-center border border-2 border-blue-600">Join Us</a>
+        <a href="#" class="flex items-center justify-center button w-full rounded-full px-4 py-2 text-center text-blue-600 border border-2 border-blue-600 dark:text-blue-400 dark:border-blue-400">Learn More</a>
+    </div>
+    
+</div>
+    
+</div>
+
+<div class="flex w-full overflow-x-auto gap-4 p-2 justify-start opacity-50">
+    <img class="w-48" src="https://kheliyaad.com/wp-content/uploads/2024/08/sponsor-sample.png">
+    <img class="w-48" src="https://kheliyaad.com/wp-content/uploads/2024/08/sponsor-sample.png">
+    <img class="w-48" src="https://kheliyaad.com/wp-content/uploads/2024/08/sponsor-sample.png">
+    <img class="w-48" src="https://kheliyaad.com/wp-content/uploads/2024/08/sponsor-sample.png">
+    <img class="w-48" src="https://kheliyaad.com/wp-content/uploads/2024/08/sponsor-sample.png">
+    <img class="w-48" src="https://kheliyaad.com/wp-content/uploads/2024/08/sponsor-sample.png">
+</div>
+
+
+<div class="flex flex-col w-full text-xl items-center gap-4 ">
+    <p class="w-full text-center font-serif-noto text-3xl md:text-5xl mb-3">Blogs & Gallery</p>
+    <div class="flex md:flex-row flex-col-reverse w-full flex-shrink-0 text-base xl:text-xl gap-4">
+        <div class="flex md:w-1/2 items-center justify-center h-96 bg-blue-500 rounded-3xl shadow-lg overflow-hidden bg-cover bg-center" style="background-image: url('https://kheliyaad.com/wp-content/uploads/2019/12/img_0030-1.jpg');">
+            <div class="p-4 bg-gray-900/50 w-full self-end backdrop-blur-sm hover:bg-gray-700 hover:cursor-pointer">
+              <h2 class="text-xl font-semibold text-white mb-2">Blog Title</h2>
+              <p class="text-gray-100 text-sm">
+                This is a short description or excerpt of the blog. Click the button below to read more.
+              </p>
+            </div>
+          </div>
+          
+        <div class="flex md:w-1/2 h-96 grid grid-cols-3 gap-1">
+            <div class="bg-blue-700 rounded-3xl hover:cursor-pointer hover:ring-2 hover:ring-blue-500 bg-cover bg-center" style="background-image: url(https://kheliyaad.com/wp-content/uploads/2019/12/Gulli-Danda-510x287.jpg);"></div>
+            <div class="bg-blue-700 rounded-3xl hover:cursor-pointer hover:ring-2 hover:ring-blue-500 bg-cover bg-center" style="background-image: url(https://kheliyaad.com/wp-content/uploads/2019/12/Girls-kabaddi-India-510x338.jpg);"></div>
+            <div class="bg-blue-700 rounded-3xl hover:cursor-pointer hover:ring-2 hover:ring-blue-500 bg-cover bg-center" style="background-image: url(https://kheliyaad.com/wp-content/uploads/2019/12/kho-kho-510x268.jpg);"></div>
+            <div class="bg-blue-700 rounded-3xl hover:cursor-pointer hover:ring-2 hover:ring-blue-500 bg-cover bg-center" style="background-image: url(https://kheliyaad.com/wp-content/uploads/2019/12/hopscotch-hp-orig-510x340.jpg);"></div>
+            <div class="bg-blue-700 rounded-3xl hover:cursor-pointer hover:ring-2 hover:ring-blue-500 bg-cover bg-center" style="background-image: url(https://kheliyaad.com/wp-content/uploads/2019/12/ITGF-sack-race-510x229.jpg);"></div>
+            <div class="bg-blue-700 rounded-3xl hover:cursor-pointer hover:ring-2 hover:ring-blue-500 bg-cover bg-center" style="background-image: url(https://kheliyaad.com/wp-content/uploads/2019/12/maxresdefault-1-510x287.jpg);"></div>
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-col w-full text-xl items-center gap-4">
+    <div class="flex flex-col w-full flex-shrink-0 text-base xl:text-xl">
+        <p class="w-full text-center font-serif-noto text-3xl md:text-5xl mb-3">Why Join Us</p>
+            <div>
+      <button 
+        class="w-full flex justify-between gap-1 items-center p-4 text-gray-700 dark:text-gray-300 font-medium focus:outline-none"
+        onclick="toggleAccordion(1)">
+        <span class="md:text-3xl font-serif-noto text-xl text-left">Beat Mobile Phone Addiction</span>
+        <span id="icon-1" class="transform transition-transform duration-300 text-2xl font-serif-noto">-</span>
+      </button>
+      <div id="content-1" class="flex flex-col md:flex-row overflow-hidden transition-all duration-300 md:p-6">
+        <div class="flex md:w-1/3 min-h-64 h-auto rounded-3xl" style="background-image:url(https://kheliyaad.com/wp-content/uploads/2019/12/apple-applications-apps-cell-phone-607812-1-1200x800.jpg); background-position: center; background-size: cover;"></div>
+        <div class="flex md:w-2/3 h-auto flex-col">
+          <p class="p-4 text-gray-600 dark:text-gray-400">
+            We motivate people of all class of society to break the mobile phone or other electronic gadgets addiction through sport so they can enjoy stress-free life.</p>
+          <p class="p-4 text-gray-600 dark:text-gray-400">Sports and Physical activities play a crucial role in our life. It is not only important for kids but also for adults.</p>
+          <p class="p-4 text-gray-600 dark:text-gray-400">For balancing digital life and real-life reversing screen addiction is very important. The more we invest in our phones, the more we divert from our well-being. Every moment spent on your phone steals the richness of real-life experiences. we don’t even realize how much time we’re wasting on our phones. We will help you get started on your path to recovery, so come join us.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion Item 2 -->
+    <div>
+      <button 
+        class="w-full flex justify-between gap-1 items-center p-4 text-gray-700 dark:text-gray-300 font-medium focus:outline-none"
+        onclick="toggleAccordion(2)">
+        <span class="md:text-3xl font-serif-noto text-xl text-left">Healthy mind resides in healthy body.</span>
+        <span id="icon-2" class="transform transition-transform duration-300 text-2xl font-serif-noto">+</span>
+      </button>
+      <div id="content-2" class="flex flex-col-reverse md:flex-row overflow-hidden transition-all duration-300 md:p-6">
+        <div class="flex md:w-2/3 h-auto flex-col">
+          <p class="p-4 text-gray-600 dark:text-gray-400">
+            A lot of research has found that sports, physical activity can have immediate and long-term benefits. Sports helps in reducing depression. The best solution to get rid of stress is to do sports, physical activity or exercise daily. National guidelines recommended total of 60 min of physical activity every day for healthy body and mind.
+          </p>
+          <p class="p-4 text-gray-600 dark:text-gray-400">
+            Nobody can deny the importance of sports for overall wellbeing of a child. Therefore, irrespective of gender, every child should be encouraged to play sports and keep themselves fit. According to research, playing sports is beneficial for mental and physical wellbeing and keeps one physically healthy and mentally active. It increases self – confidence, self-esteem and mental awareness.
+          </p>
+        </div>
+        <div class="flex md:w-1/3 min-h-64 rounded-3xl" style="background-image:url(https://kheliyaad.com/wp-content/uploads/2024/08/pexels-mary-taylor-5896973.jpg); background-position: center; background-size: cover;"></div>
+      </div>
+    </div>
+
+    <!-- Accordion Item 3 -->
+    <div>
+      <button 
+        class="w-full flex justify-between gap-1 items-center p-4 text-gray-700 dark:text-gray-300 font-medium focus:outline-none"
+        onclick="toggleAccordion(3)">
+        <span class="md:text-3xl font-serif-noto text-xl text-left">Apart from that, sports have many benefits.</span>
+        <span id="icon-3" class="transform transition-transform duration-300 text-2xl font-serif-noto">+</span>
+      </button>
+      <div id="content-3" class="flex md:flex-row flex-col overflow-hidden transition-all duration-300 md:p-6">
+        <div class="flex md:w-1/3 min-h-64 h-auto rounded-3xl" style="background-image:url(https://kheliyaad.com/wp-content/uploads/2024/08/pexels-olly-3755440-1200x800.jpg); background-position: center; background-size: cover;"></div>
+        <div class="flex md:w-2/3 h-auto flex-col"> 
+          <p class="p-4 text-gray-600 dark:text-gray-400">
+            If we are active, not only will we be more likely to lose body fat, but the risk of obesity will also be reduced.
+          </p>
+          <p class="p-4 text-gray-600 dark:text-gray-400">
+            Participating in sports can be a fun and enjoyable way to stay active, challenge oneself, and have a good time with others. Team sports in particular can provide opportunities to develop skills such as communication, collaboration, and leadership.
+          </p>
+          <p class="p-4 text-gray-600 dark:text-gray-400">
+            Despite the many people who take part in sport, it is also worth noting that according to a report by the World Health Organization, approximately 80% of the world’s adolescent population (ages 11-17) is insufficiently physically active. So there is need to grow participation in sport and physical activity.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  
+  <script>
+    function toggleAccordion(index) {
+      const content = document.getElementById(`content-${index}`);
+      const icon = document.getElementById(`icon-${index}`);
+      const isHidden = content.classList.contains("hidden");
+
+
+      // Toggle current accordion
+      if (isHidden) {
+        content.classList.remove("hidden");
+        icon.textContent = "-";
+      } else {
+        content.classList.add("hidden");
+        icon.textContent = "+";
+      }
+    }
+  </script>
+    
+    </div>
+</div>
+
+<div class="flex flex-col w-full text-xl items-center gap-4">
+    <div class="flex flex-col w-full flex-shrink-0 text-base xl:text-xl">
+        <p class="w-full text-center font-serif-noto text-3xl md:text-5xl mb-3">Benefits of Play</p>
+        <div class="flex flex-row w-full gap-4 mt-2 overflow-x-auto justify-start">
+            <div class="flex w-1/3 items-center justify-center h-96 bg-blue-500 rounded-3xl shadow-lg overflow-hidden bg-cover bg-center" style="background-image: url('https://kheliyaad.com/wp-content/uploads/2019/12/nondi.jpeg');">
+                <div class="p-4 bg-gray-900/50 w-full self-end backdrop-blur-sm hover:bg-blue-900/50 hover:cursor-pointer">
+                    <h2 class="text-xl font-semibold text-white mb-2">For Children</h2>
+                    <p class="text-gray-100 text-sm">
+                    “Being a child prepares you to become an adult with all life’s joys and challenges, and what better way to learn as a child than to be given the chance to play freely?”
+                    </p>
+                </div>
+            </div>
+            <div class="flex w-1/3 items-center justify-center h-96 bg-blue-500 rounded-3xl shadow-lg overflow-hidden bg-cover bg-center" style="background-image: url('https://kheliyaad.com/wp-content/uploads/2019/12/older-women-playing-768.jpg');">
+                <div class="p-4 bg-gray-900/50 w-full self-end backdrop-blur-sm hover:bg-blue-900/50 hover:cursor-pointer">
+                    <h2 class="text-xl font-semibold text-white mb-2">For Adults</h2>
+                    <p class="text-gray-100 text-sm">
+                        “Just because we’re adults, that doesn’t mean we have to make life all about work. Learn how play can benefit your relationships, job, and mood.”
+                    </p>
+                </div>
+            </div>
+            <div class="flex w-1/3 items-center justify-center h-96 bg-blue-500 rounded-3xl shadow-lg overflow-hidden bg-cover bg-center" style="background-image: url('https://kheliyaad.com/wp-content/uploads/2019/12/playing-area.jpg');">
+                <div class="p-4 bg-gray-900/50 w-full self-end backdrop-blur-sm hover:bg-blue-900/50 hover:cursor-pointer">
+                    <h2 class="text-xl font-semibold text-white mb-2">For Corporate Employees</h2>
+                    <p class="text-gray-100 text-sm">
+                        “Do you still play? With other adults (not just your kids)? A strange question? Did you know that we learn best when we’re playing?”
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+        <div></div>
+        <footer></footer>
+    </div>
+    
+</body>
+<script>
+    const nav = document.querySelector('nav'); // Select the navbar
+    let lastScrollY = window.scrollY; // Track the last scroll position
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+        // Scrolling down - hide navbar
+        nav.style.transform = 'translateY(-200px)'; // Move it up off the screen
+        } else {
+        // Scrolling up - show navbar
+        nav.style.transform = 'translateY(0)'; // Reset to visible position
+        }
+        lastScrollY = window.scrollY; // Update the last scroll position
+    });
+
+    // Add smooth transition to the navbar
+    nav.style.transition = 'transform 0.3s ease-in-out';
+</script>
+
+<script>
+    
+</script>
+
+</html>
