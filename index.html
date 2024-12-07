@@ -62,19 +62,17 @@
             'opsz' 24
         }
 
-        #myVideo {
+        .myVideo {
             position: fixed;
             left: 0;
-            top: 0;
-            
+            bottom: 0;
             z-index: -1;
         }
     </style>
 </head>
 
 <body class="dark:bg-gray-950 bg-gray-50 font-sans-noto dark:text-white">
-    <video class="hidden h-dvh md:h-auto md:w-screen dark:block opacity-50 md:opacity-25" autoplay muted loop id="myVideo">
-        <source src="https://res.cloudinary.com/dej3owk7z/video/upload/v1733588621/Animated_Liquid_Gradient_Background_4_ukczbs.mp4" type="video/mp4">
+    <video class="myVideo hidden md:h-auto md:w-screen dark:block opacity-75 md:opacity-25" autoplay muted loop>
         <source src="https://res.cloudinary.com/dej3owk7z/video/upload/v1733588621/Animated_Liquid_Gradient_Background_4_ukczbs.mp4" type="video/mp4">
     </video>
     <div class="flex flex-col min-h-screen h-full items-center justify-center gap-8 md:gap-24 justify-self-center max-w-7xl px-4 back" >
