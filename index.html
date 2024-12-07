@@ -8,7 +8,7 @@
     <title>Django Project</title>
 
     <!-- Include Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://res.cloudinary.com/dej3owk7z/raw/upload/v1733598689/output_fiqqtf.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
         }
 
         .font-serif-noto {
-            font-family: "Noto Serif", serif;
+            font-family: "Noto Serif Display", serif;
             font-optical-sizing: auto;
             font-style: normal;
             font-variation-settings:
@@ -72,7 +72,7 @@
 </head>
 
 <body class="dark:bg-gray-950 bg-gray-50 font-sans-noto dark:text-white">
-    <div class="flex flex-col min-h-screen h-full items-center justify-center gap-8 md:gap-24 justify-self-center max-w-7xl px-4 back" >
+    <div class="flex flex-col min-h-screen h-full items-center justify-start gap-8 md:gap-24 justify-self-center max-w-7xl px-4 back" >
         <nav class="nav flex self-center justify-self-center justify-between backdrop-blur-md text-white w-full xs:max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-4xl md:rounded-full fixed bg-transparent border-gray-500 md:border-2 top-0 md:top-2 md:p-0 md:px-4 p-4">
             <div class="nav-item flex px-4 md:px-6 self-start invert dark:invert-0">
                 <img class="w-36 h-auto object-cover lg:w-48" src="https://res.cloudinary.com/dej3owk7z/image/upload/v1733460651/m1gx89g18zcmtw3pzfve.png">
@@ -103,10 +103,10 @@
 </video>
 <div id="hero" class="flex md:flex-row flex-col-reverse w-full h-full justify-between gap-6 p-2" style="background-image: url();">
     <div class="flex flex-col md:w-2/5 gap-4 h-auto text-gray-600 dark:text-gray-300">
-        <div class="text-2xl md:text-4xl xl:text-5xl  text-gray-700 dark:text-gray-200"><span class="text-blue-600 dark:text-blue-400 font-serif-noto font-bold md:text-5xl">Kheliyaad</span> is an Institution which preserves the status of people in society by developing Mental, Physical as well as Social spirit and take them in the direction of good health.</div>
-        <div class="hidden w-full items-center justify-center gap-4 lg:flex text-xl mt-2 2xl:px-8">
-            <a href="#" class="flex items-center justify-center button w-full rounded-full px-4 py-2 bg-blue-600 text-white text-center border border-2 border-blue-600 transition duration-700 ease-in-out hover:bg-blue-700 hover:border-blue-700 hover:font-medium">Join Us</a>
-            <a href="#" class="flex items-center justify-center button w-full rounded-full px-4 py-2 text-center border border-2 border-blue-400 text-blue-400 transition duration-300 ease-in-out hover:bg-blue-600 hover:border-blue-600 hover:text-white">Learn More</a>
+        <p class="text-2xl md:text-4xl xl:text-5xl  text-gray-700 dark:text-gray-200 leading-10"><span class="text-blue-600 dark:text-blue-400 font-medium md:text-5xl">Kheliyaad</span> is an Institution which preserves the <span class="text-blue-600 dark:text-blue-400 font-medium md:text-5xl">status</span> of people in society by developing <span class="text-blue-600 dark:text-blue-400 font-medium md:text-5xl">Mental, Physical</span> as well as <span class="text-blue-600 dark:text-blue-400 font-medium md:text-5xl">Social spirit</span> and take them in the direction of good health.</p>
+            <div class="hidden w-full items-center justify-center gap-4 lg:flex text-xl mt-2 2xl:px-8">
+            <a href="#" class="flex items-center justify-center button w-full rounded-full px-4 py-2 bg-blue-600 text-white text-center border border-2 border-blue-600 transition duration-700 ease-in-out hover:dark:border-blue-400 hover:bg-transparent hover:backdrop-blur-sm hover:text-blue-600 hover:dark:text-blue-200">Join Us</a>
+            <a href="#" class="flex items-center justify-center button w-full rounded-full px-4 py-2 text-center border border-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-200 bg-transparent backdrop-blur-md transition duration-700 ease-in-out hover:bg-blue-600 hover:border-blue-600 hover:text-white">Learn More</a>
         </div>
     </div> 
     <div class="flex flex-col md:w-3/5 items-center justify-start gap-2">
@@ -175,7 +175,7 @@
     
 </div>
 
-<div class="flex w-full overflow-x-auto gap-4 p-2 justify-start ">
+<div class="flex w-full overflow-x-auto gap-4 p-2 justify-start grayscale ">
     <img class="w-48" src="https://kheliyaad.com/wp-content/uploads/2024/08/sponsor-sample.png">
     <img class="w-48" src="https://kheliyaad.com/wp-content/uploads/2024/08/sponsor-sample.png">
     <img class="w-48" src="https://kheliyaad.com/wp-content/uploads/2024/08/sponsor-sample.png">
@@ -238,7 +238,7 @@
         <span class="md:text-3xl font-serif-noto text-xl text-left">Healthy mind resides in healthy body.</span>
         <span id="icon-2" class="transform transition-transform duration-300 text-2xl font-serif-noto">+</span>
       </button>
-      <div id="content-2" class="flex flex-col-reverse md:flex-row overflow-hidden transition-all duration-300 md:p-6">
+      <div id="content-2" class="hidden flex flex-col-reverse md:flex-row overflow-hidden transition-all duration-300 md:p-6">
         <div class="flex md:w-2/3 h-auto flex-col">
           <p class="p-4 text-gray-600 dark:text-gray-400">
             A lot of research has found that sports, physical activity can have immediate and long-term benefits. Sports helps in reducing depression. The best solution to get rid of stress is to do sports, physical activity or exercise daily. National guidelines recommended total of 60 min of physical activity every day for healthy body and mind.
@@ -259,7 +259,7 @@
         <span class="md:text-3xl font-serif-noto text-xl text-left">Apart from that, sports have many benefits.</span>
         <span id="icon-3" class="transform transition-transform duration-300 text-2xl font-serif-noto">+</span>
       </button>
-      <div id="content-3" class="flex md:flex-row flex-col overflow-hidden transition-all duration-300 md:p-6">
+      <div id="content-3" class="hidden flex md:flex-row flex-col overflow-hidden transition-all duration-300 md:p-6">
         <div class="flex md:w-1/3 min-h-64 h-auto rounded-3xl" style="background-image:url(https://kheliyaad.com/wp-content/uploads/2024/08/pexels-olly-3755440-1200x800.jpg); background-position: center; background-size: cover;"></div>
         <div class="flex md:w-2/3 h-auto flex-col"> 
           <p class="p-4 text-gray-600 dark:text-gray-400">
