@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Blog Kheliyaad</title>
+    <link rel="canonical" href="http://127.0.0.1:8000/blog/1">
+
+    <!-- Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        .rounded-6xl {
+            border-radius: 4vw;
+        }
+        .rounded-4xl {
+            border-radius: 2vw;
+        }
+        /* width */
+        ::-webkit-scrollbar {
+               width: 5px; 
+               height: 5px;
+            }
+            
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 2px;
+        }
+        .font-sans-noto{
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        .font-serif-noto {
+            font-family: "Noto Serif Display", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+
+        .backdrop {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100vw; /* Full width of the viewport */
+            height: 100vh; /* Full height of the viewport */
+            object-fit: cover; 
+            z-index: -1;
+        }
+
+        .nav {
+            z-index: 100;
+        }
+        .nav_mob {
+            z-index: 99;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    
+</head>
+
+<body class="flex w-full max-w-screen justify-center dark:bg-gray-950 bg-gray-50 font-sans-noto dark:text-white">
+    <div class="flex flex-col min-h-screen h-full w-full items-center justify-start gap-8 md:gap-24 max-w-7xl px-4" >
+        <nav class="nav flex self-center justify-self-center justify-between backdrop-blur-md text-white w-full xs:max-w-xs md:max-w-2xl lg:max-w-3xl xl:max-w-4xl md:rounded-full fixed bg-blue-500/60 border-gray-500 md:border-2 top-0 md:top-2 md:p-0 md:px-4 p-4">
+            <div class="nav-item flex px-4 md:px-6 self-start invert dark:invert-0">
+                <img class="w-36 h-auto object-cover lg:w-48" src="https://res.cloudinary.com/dej3owk7z/image/upload/v1733460651/m1gx89g18zcmtw3pzfve.png">
+            </div>
+            <div class="nav-item md:flex px-6 text-center items-center gap-6 font-medium lg:text-xl hidden text-black dark:text-white">
+                <a href="/" class="hover:underline">Home</a>
+                <a href="#" class="hover:underline">Blog</a>
+                <a href="#" class="hover:underline">Gallery</a>
+                <a href="#" class="hover:underline">About Us</a>
+                
+                <a href="/logout/" class="hover:underline">Log Out</a>
+                
+            </div>
+            <button id="hamburger" onclick="toggleNav()" class="nav-item flex px-6 text-center items-center gap-6 font-medium lg:text-xl md:hidden text-black dark:text-white">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+            <button id="close" onclick="toggleNav()" class="nav-item flex px-6 text-center items-center gap-6 font-medium lg:text-xl hidden md:hidden text-black dark:text-white">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+        </nav>
+        <div id="nav_mobile" class="nav_mob flex flex-col gap-8 w-full h-full hidden md:hidden fixed top-0 backdrop-blur-md bg-gray-200/60 dark:bg-gray-900/80">
+            <div class="h-16 flex items-end">
+            
+            </div>
+            <div class="flex flex-col px-10 text-left items-start gap-6 font-medium text-xl text-black dark:text-white">
+                <a href="/" class="hover:underline">Home</a>
+                <a href="#" class="hover:underline">Blog</a>
+                <a href="#" class="hover:underline">Gallery</a>
+                <a href="#" class="hover:underline">About Us</a>
+                
+                <a href="/logout/" class="hover:underline">Log Out</a>
+                
+            </div>
+        </div>
+        <div class="h-16 md:h-8 flex items-end">
+            
+        </div>
+        
+        
+<div class="flex flex-col max-w-4xl w-full p-8 gap-6">
+    <div class="mb-6">
+        <img src="/thumbnails/ba72d92eb67c1508e4f288eb092e614f.jpg" alt="First Blog" class="rounded-lg w-full h-auto">
+    </div>
+
+    <h1 class="text-6xl font-bold mb-4">First Blog</h1>
+    <div class="text-sm text-gray-500">
+        <p>Created on: December 8, 2024</p>
+        <p>Last updated: December 8, 2024</p>
+    </div>
+    <div class="prose lg:prose-xl mb-6">
+        <h1 class="font-bold my-4 text-3xl" id="markdown-syntax-guide">Markdown syntax guide</h1>
+<h2 class="font-bold my-4 text-2xl" id="headers">Headers</h2>
+<h1 class="font-bold my-4 text-3xl" id="this-is-a-heading-h1">This is a Heading h1</h1>
+<h2 class="font-bold my-4 text-2xl" id="this-is-a-heading-h2">This is a Heading h2</h2>
+<h6 class="font-bold my-4 text-sm" id="this-is-a-heading-h6">This is a Heading h6</h6>
+<h2 class="font-bold my-4 text-2xl" id="emphasis">Emphasis</h2>
+<p class="my-2"><em>This text will be italic</em><br/>
+<em>This will also be italic</em></p>
+<p class="my-2"><strong>This text will be bold</strong><br/>
+<strong>This will also be bold</strong></p>
+<p class="my-2"><em>You <strong>can</strong> combine them</em></p>
+<h2 class="font-bold my-4 text-2xl" id="lists">Lists</h2>
+<h3 class="font-bold my-4 text-xl" id="unordered">Unordered</h3>
+<ul class="list-disc ml-5">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 2a</li>
+<li>Item 2b
+<ul class="list-disc ml-5">
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ul></li>
+</ul>
+<h3 class="font-bold my-4 text-xl" id="ordered">Ordered</h3>
+<ol class="list-decimal ml-5">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3
+<ol class="list-decimal ml-5">
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ol></li>
+</ol>
+<h2 class="font-bold my-4 text-2xl" id="images">Images</h2>
+<p class="my-2"><img alt="This is an alt text." src="https://picsum.photos/200" title="This is a sample image."/></p>
+<h2 class="font-bold my-4 text-2xl" id="links">Links</h2>
+<p class="my-2">You may be using <a class="text-blue-600 dark:text-blue-400 hover:text-accent" href="https://markdownlivepreview.com/" target="_blank">Markdown Live Preview</a>.</p>
+<h2 class="font-bold my-4 text-2xl" id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p class="my-2">Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.</p>
+<blockquote>
+<p class="my-2">Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.</p>
+</blockquote>
+</blockquote>
+<h2 class="font-bold my-4 text-2xl" id="tables">Tables</h2>
+<table class="table-auto w-full my-4 border-collapse">
+<thead>
+<tr>
+<th class="border px-4 py-2">Left columns</th>
+<th class="border px-4 py-2" style="text-align:center;">Right columns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border px-4 py-2">left foo</td>
+<td class="border px-4 py-2" style="text-align:center;">right foo</td>
+</tr>
+<tr>
+<td class="border px-4 py-2">left bar</td>
+<td class="border px-4 py-2" style="text-align:center;">right bar</td>
+</tr>
+<tr>
+<td class="border px-4 py-2">left baz</td>
+<td class="border px-4 py-2" style="text-align:center;">right baz</td>
+</tr>
+</tbody>
+</table>
+<h2 class="font-bold my-4 text-2xl" id="blocks-of-code">Blocks of code</h2>
+<div class="mockup-code"><pre class="rounded p-4 my-4 overflow-auto"><code class="px-1">let message = 'Hello world';
+alert(message);
+</code></pre></div>
+<h2 class="font-bold my-4 text-2xl" id="inline-code">Inline code</h2>
+<p class="my-2">This web site is using <code class="px-1">markedjs/marked</code>.</p>
+
+    </div>
+
+    
+</div>
+
+        
+        <div></div>
+        <footer></footer>
+    </div>
+    
+</body>
+<script>
+    const nav = document.querySelector('nav'); // Select the navbar
+    let lastScrollY = window.scrollY; // Track the last scroll position
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+        // Scrolling down - hide navbar
+        nav.style.transform = 'translateY(-200px)'; // Move it up off the screen
+        } else {
+        // Scrolling up - show navbar
+        nav.style.transform = 'translateY(0)'; // Reset to visible position
+        }
+        lastScrollY = window.scrollY; // Update the last scroll position
+    });
+
+    // Add smooth transition to the navbar
+    nav.style.transition = 'transform 0.3s ease-in-out';
+</script>
+
+<script>
+    const navmob = document.querySelector('#nav_mobile'); // Use the correct selector, '.' for class
+    const hamburger = document.querySelector("#hamburger");
+    const close_but = document.querySelector("#close");
+    function toggleNav() {
+        if (navmob.classList.contains('hidden')) { // Check if it has the class 'hidden'
+            navmob.classList.remove('hidden');
+            hamburger.classList.add('hidden');
+            close_but.classList.remove('hidden');
+        } else {
+            navmob.classList.add('hidden'); // Add 'hidden' if not present
+            hamburger.classList.remove('hidden');
+            close_but.classList.add('hidden');
+        }
+    }
+</script>
+
+<script>
+    
+</script>
+
+</html>
